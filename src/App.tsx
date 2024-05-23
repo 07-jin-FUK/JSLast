@@ -141,7 +141,7 @@ function App() {
       <CssBaseline />
       <Router>
         <Routes>
-          <Route path="/JSLast" element={<AppLayout />}>
+          <Route path="/" element={<AppLayout />}>
             <Route
               index
               element={
@@ -156,7 +156,7 @@ function App() {
                 />
               }
             />
-            <Route path="/JSLast/report" element={
+            <Route path="/report" element={
               <Report
                 currentMonth={currentMonth}
                 setCurrentMonth={setCurrentMonth}
@@ -164,8 +164,8 @@ function App() {
                 isLoading={isLoading}
                 onDeleteTransaction={handleDeleteTransaction}
               />} />
-            <Route path="/JSLast/secret" element={<Secret />} />
-            <Route path="/JSLast/save3" element={<Save3 />} />
+            <Route path="/secret" element={<Secret />} />
+            <Route path="/save3" element={<Save3 />} />
             <Route path="*" element={<NoMatch />} />
           </Route>
         </Routes>
